@@ -19,6 +19,13 @@ public class ValorService {
         return new ValorDto(valores);
     }
 
+    public double calcularMedia(List<Double> valores){
+        double sum = 0;
+        for (Double valor : valores) {
+            sum = sum + valor;
+        }
+        return sum / valores.size();
+    }
     public void cadastrarValor(ValorDto valorDto){
 
     }

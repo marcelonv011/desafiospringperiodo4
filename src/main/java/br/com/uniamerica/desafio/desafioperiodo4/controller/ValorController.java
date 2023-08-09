@@ -33,6 +33,11 @@ public class ValorController {
      ValorDto valorDto = valorService.mostrarDatos(valoresGuardados);
      return ResponseEntity.ok(valorDto);
     }
+    @GetMapping("/media")
+    public ResponseEntity<Double> obtenerMedia() {
+        Double media = valorService.calcularMedia(valoresGuardados);
+        return ResponseEntity.ok(media);
+    }
 
 
 }
