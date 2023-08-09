@@ -43,6 +43,7 @@ public class ValorController {
         int cantidad = valorService.obtenerCantidadDatos(valoresGuardados);
         return ResponseEntity.ok(cantidad);
     }
+    
 
 
 }
