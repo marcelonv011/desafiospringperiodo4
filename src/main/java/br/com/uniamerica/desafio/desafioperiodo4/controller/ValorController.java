@@ -38,6 +38,11 @@ public class ValorController {
         Double media = valorService.calcularMedia(valoresGuardados);
         return ResponseEntity.ok(media);
     }
-
+    @GetMapping("/cantidad")
+    public ResponseEntity<Integer> obtenerCantidadDatos() {
+        int cantidad = valorService.obtenerCantidadDatos(valoresGuardados);
+        return ResponseEntity.ok(cantidad);
+    }
+    
 
 }

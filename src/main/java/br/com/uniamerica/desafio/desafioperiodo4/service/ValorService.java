@@ -26,6 +26,10 @@ public class ValorService {
         }
         return sum / valores.size();
     }
+    public int obtenerCantidadDatos(List<Double> valores) {
+        return valores.size();
+    }
+
     public void cadastrarValor(ValorDto valorDto){
 
     }
